@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>foodJunkies</title>
+  <title>FoodJunkies</title>
   <!-- Bootstrap CSS CDN  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -28,7 +28,7 @@
     <div class="jumbotron" style="background-color: #d81818de; color: rgb(233, 178, 59);">
       <h1 class="text-center">
         <strong>
-          <i class="fa fa-newspaper-o"></i> foodJunkies </strong>
+          <i class="fa fa-cutlery" aria-hidden="true"></i> FoodJunkies </strong>
       </h1>
     </div>
     <!-- Row for Searching New York Times -->
@@ -36,21 +36,21 @@
       <div class="col-sm-12">
         <br />
         <!-- First card is for handling the search parameters -->
-        <div class="card">
+        <div class="card" style="background-color:blanchedalmond;">
           <div class="card-header">
-            <strong> <i class="fa fa-list-alt"></i> Search Parameters</strong>
+            <strong> <i class="fa fa-list-alt"></i> Search Restaurants</strong>
           </div>
           <div class="card-body">
             <!-- Here we create an HTML Form for handling the inputs-->
             <form role="form">
               <!-- Here we create the text box for capturing the search term-->
               <div class="form-group">
-                <label for="search">Search Term:</label>
+                <label for="search">Yummy Search :</label>
                 <input type="text" class="form-control" id="search-term" />
               </div>
               <!-- Here we capture the number of records that the user wants to retrieve  -->
               <div class="form-group">
-                <label for="pwd">Number of Records to Retrieve:</label>
+                <label for="pwd">Number of Food to Eat:</label>
                 <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
                   <option selected value="1">1</option>
                   <!-- Setting the option for 5 as default -->
@@ -74,7 +74,7 @@
                 <i class="fa fa-search"></i> Search
               </button>
               <button class="btn btn-default" id="clear-all">
-                <i class="fa fa-trash"></i> Clear Results
+                <i class="fa fa-trash"></i> Clear Junk
               </button>
             </form>
           </div>
@@ -86,10 +86,10 @@
       <div class="col-sm-12">
         <br />
         <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
-        <div class="card">
+        <div class="card" style="background-color: blanchedalmond;">
           <!-- card Heading for the retrieved articles box -->
           <div class="card-header">
-            <strong> <i class="fa fa-table"></i> Top Articles</strong>
+            <strong> <i class="fa fa-table"></i> Top Junk</strong>
           </div>
           <!-- This main card will hold each of the resulting articles -->
           <div class="card-body" id="article-section"></div>
