@@ -1,0 +1,94 @@
+#app-name {
+  text-align: center;
+  background-color:gold;
+  color: black;
+}
+
+.hollow-button {
+  background-color: gold;
+}
+
+.link-linked {
+  background-color: gold;
+}
+
+.port {
+background-color: gold;
+}
+
+.mail {
+background-color: gold;
+}
+
+.card-user-container {
+    margin-bottom: 1rem;
+    background-color: #05eca7;
+    color: black;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  .card-user-container .card-user-avatar .user-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 11.875rem;
+    height: 11.875rem;
+    padding: 0.9375rem;
+  }
+  
+  .card-user-container .card-user-avatar .user-image:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .card-user-container .card-user-bio {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-user-container .card-user-bio .location {
+    display: inline-block;
+    margin: 0 0.9375rem;
+    color: blue;
+    font-size: 0.875rem;
+  }
+  
+  .card-user-container .card-user-bio .location-icon,
+  .card-user-container .card-user-bio .location-text {
+    display: inline-block;
+    padding: 0 0.3125rem;
+  }
+  
+  .card-user-container .card-user-social {
+    background: #044eec;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-user-container .card-user-social ul {
+    display: inline-block;
+  }
+  
+  .card-user-container .card-user-social ul li {
+    margin: 0 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .card-user-container .card-user-social ul li:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .card-user-container .card-user-button {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .body {
+    color: coral;
+  }
