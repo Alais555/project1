@@ -20,6 +20,8 @@ function updatePage(zomatoData) {
     // Log the NYTData to console, where it will show up as an object
     console.log(zomatoData);
     console.log("------------------------------------");
+    var restaurantList = new restaurantList(zomatoData);
+    return restaurantList;
     // Loop through and build elements for the defined number of articles
     /*
     for (var i = 0; i < numArticles; i++) {
