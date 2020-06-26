@@ -1,8 +1,29 @@
+#app-name {
+  text-align: center;
+  background-color:rgb(228, 203, 66);
+  color: black;
+}
+
+.hollow-button {
+  background-color: rgb(228, 203, 66);
+}
+
+.link-linked {
+  background-color: rgb(228, 203, 66);
+}
+
+.port {
+background-color: rgb(228, 203, 66);
+}
+
+.mail {
+background-color: rgb(228, 203, 66);
+}
 
 .card-user-container {
     margin-bottom: 1rem;
-    background-color: #fefefe;
-    color: #0a0a0a;
+    background-color: #03bd85;
+    color: black;
     overflow: hidden;
     padding: 0;
     border-radius: 0;
@@ -31,7 +52,7 @@
   .card-user-container .card-user-bio .location {
     display: inline-block;
     margin: 0 0.9375rem;
-    color: #767676;
+    color: rgb(5, 5, 87);
     font-size: 0.875rem;
   }
   
@@ -42,7 +63,7 @@
   }
   
   .card-user-container .card-user-social {
-    background: #e6e6e6;
+    background: rgb(5, 5, 87);
     padding: 1rem;
     text-align: center;
   }
@@ -68,4 +89,6 @@
     padding: 1rem;
   }
   
-  
+  .body {
+    color: coral;
+  }
