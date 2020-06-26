@@ -1,28 +1,28 @@
 #app-name {
   text-align: center;
-  background-color:gold;
+  background-color:rgb(228, 203, 66);
   color: black;
 }
 
 .hollow-button {
-  background-color: gold;
+  background-color: rgb(228, 203, 66);
 }
 
 .link-linked {
-  background-color: gold;
+  background-color: rgb(228, 203, 66);
 }
 
 .port {
-background-color: gold;
+background-color: rgb(228, 203, 66);
 }
 
 .mail {
-background-color: gold;
+background-color: rgb(228, 203, 66);
 }
 
 .card-user-container {
     margin-bottom: 1rem;
-    background-color: #05eca7;
+    background-color: #03bd85;
     color: black;
     overflow: hidden;
     padding: 0;
@@ -52,7 +52,7 @@ background-color: gold;
   .card-user-container .card-user-bio .location {
     display: inline-block;
     margin: 0 0.9375rem;
-    color: blue;
+    color: rgb(5, 5, 87);
     font-size: 0.875rem;
   }
   
@@ -63,7 +63,7 @@ background-color: gold;
   }
   
   .card-user-container .card-user-social {
-    background: #044eec;
+    background: rgb(5, 5, 87);
     padding: 1rem;
     text-align: center;
   }
