@@ -3,8 +3,14 @@
  * @returns {string} URL for NYT API based on form inputs
  */
 function buildQueryURL() {
+    var searchCity = $("#search-term").val();
+    console.log(searchCity);
+    // loop through cuisine response
+    // If the search-city = cuisine.response[i]
+    // then display response to front end
     // queryURL is the url we'll use to query the API
-    var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=94741&entity_type=zone&cuisines=55";
+    // "https://developers.zomato.com/api/v2.1/search?entity_id=94741&entity_type=zone&cuisines=55"
+    var queryURL = "https://developers.zomato.com/api/v2.1/cuisines?city_id=302"; 
     // Begin building an object to contain our API call's query parameters
     // Set the API key
     return queryURL;
@@ -20,13 +26,14 @@ function updatePage(zomatoData) {
     // Log the NYTData to console, where it will show up as an object
     console.log(zomatoData);
     console.log("------------------------------------");
-    var restaurantList = new restaurantList(zomatoData);
-    return restaurantList;
+    console.log(zomatoData.cuisines[0].cuisine.cuisine_name);
     // Loop through and build elements for the defined number of articles
-    /*
-    for (var i = 0; i < numArticles; i++) {
+    
+    for (var i = 0; i < zomatoData.cuisines.length; i++) {
+    
+        console.log(zomatoData.cuisines[i])
         // Get specific article info for current index
-        var article = zomatoData.response.docs[i];
+        /*var article = zomatoData.response.docs[i];
         // Increase the articleCount (track article # - starting at 1)
         var articleCount = i + 1;
         // Create the  list group to contain the articles and add the article content for each
@@ -69,9 +76,9 @@ function updatePage(zomatoData) {
         // Append and log url
         $articleListItem.append("<a href='" + article.web_url + "'>" + article.web_url + "</a>");
         console.log(article.web_url);
-        // Append the article
-        $articleList.append($articleListItem);
-    }  END OF THE FORLOOP*/ 
+        // Append the article 
+        $articleList.append($articleListItem);*/
+    }  /*END OF THE FORLOOP*/ 
 }
 // Function to empty out the articles
 function clear() {
