@@ -18,32 +18,37 @@
     .articleHeadline {
       line-height: 1.5;
     }
-    body {
-      background-image: url('https://i.pinimg.com/originals/49/79/41/4979418cc7cc1d8fe3932a6a84fe987a.png'); }
+
   </style>
   <script src="https://kit.fontawesome.com/6856be086f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Main Bootstrap Search -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Food Junkie</a>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Food Junkie</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about-page.html">Junksters</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="about-page.html">Junksters</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/49/79/41/4979418cc7cc1d8fe3932a6a84fe987a.png');
+    }
+  </style>
 
   <section class="container">
     <!-- Jumbotron for Title -->
@@ -134,11 +139,7 @@
           </article>
           <!-- This main card will hold each of the resulting articles -->
           <article class="card-body" id="article-section"></article>
-          <ul>
-            <li> BunBun's Chicken</li>
-            <li> Rosie's Pizza</li>
-            <li>Chick-Fil-A</li>
-          </ul>
+          
           
         </article>
       </article>
