@@ -31,7 +31,8 @@ function updatePage(zomatoData) {
     
     for (var i = 0; i < zomatoData.cuisines.length; i++) {
     
-        console.log(zomatoData.cuisines[i])
+        console.log(zomatoData.cuisines[i]);
+        document.getElementById("article-section").innerHTML = Object.zomatoData;
         // Get specific article info for current index
         /*var article = zomatoData.response.docs[i];
         // Increase the articleCount (track article # - starting at 1)
