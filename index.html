@@ -13,7 +13,7 @@
   <style>
     .card-body a {
       word-break: break-all;
-    }
+    }√
 
     .articleHeadline {
       line-height: 1.5;
@@ -90,7 +90,9 @@
                   <!-- Here we create the text box for capturing the search term-->
                   <div class="form-group">
                     <label for="search-term">Yummy Search :</label>
-                    <input type="text" class="form-control" id="search-term" />
+                    <select id="search-term" class="custom-select">
+                      <!-- options created dynamically -->
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="pwd">Number of Food to Eat:</label>
@@ -122,9 +124,7 @@
                 <strong> <i class="fas fa-pizza-slice"></i> Top Junk</strong>
               </article>
               <!-- This main card will hold each of the resulting articles -->
-              <article class="card-body" id="article-section"></article>
-              <ul>
-                <li> BunBun's Chicken</li>
+              <ul id="article-section">
                 <li> Rosie's Pizza</li>
                 <li>Chick-Fil-A</li>
               </ul>
